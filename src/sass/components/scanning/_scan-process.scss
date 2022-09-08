@@ -10,7 +10,7 @@
   padding-right: 20px;
 }
 
-.section .title {
+.section__title {
   margin-top: 0;
   margin-bottom: 16px;
   font-family: 'Cera Pro';
@@ -28,7 +28,7 @@
   flex-wrap: wrap;
 }
 
-.scan-list-canvas {
+.scan-list__canvas {
   position: relative;
   width: 130px;
   height: 182px;
@@ -39,7 +39,7 @@
   border-radius: 50px 0px;
 }
 
-.descr {
+.scan-list__descr {
   position: absolute;
   top: 114px;
   left: 0;

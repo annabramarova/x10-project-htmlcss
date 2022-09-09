@@ -334,7 +334,7 @@ p {
 }
 
 body {
-  color: #2B2B2B;
+  color: #2b2b2b;
   background-color: #ffffff;
   font-family: "CeraPro";
   font-weight: 400;
@@ -410,13 +410,14 @@ body {
   margin-right: auto;
   margin-bottom: 32px;
   width: 280px;
-  color: #2B2B2B;
+  color: #2b2b2b;
 }
 @media screen and (min-width: 768px) {
   .main-hero__title {
     font-size: 24px;
     line-height: 1.1666666667;
     width: 336px;
+    margin-bottom: 60px;
   }
 }
 @media screen and (min-width: 1440px) {
@@ -443,6 +444,7 @@ body {
 @media screen and (min-width: 768px) {
   .main-hero__list {
     max-width: 400px;
+    margin-bottom: 60px;
     gap: 29px;
   }
 }
@@ -555,6 +557,25 @@ body {
   .main-gallery__description {
     font-size: 18px;
     line-height: 1.2777777778;
+  }
+}
+
+.main-hero > .container {
+  position: relative;
+}
+
+.main-hero__arrow {
+  position: absolute;
+  bottom: -20px;
+  left: 120px;
+}
+.main-hero__arrow:hover, .main-hero__arrow:focus {
+  fill: #008cef;
+  cursor: pointer;
+}
+@media screen and (max-width: 768px) {
+  .main-hero__arrow {
+    display: none;
   }
 }
 
@@ -937,7 +958,8 @@ body {
 .footer {
   padding-top: 40px;
   padding-bottom: 40px;
-  background-color: #F5F5FA;
+  background-color: #f5f5fa;
+  box-shadow: 5px 2px 5px 8px rgba(72, 121, 150, 0.1);
 }
 
 .footer__container {
@@ -1550,4 +1572,36 @@ a {
 
 body.is-locked {
   overflow: hidden;
+}
+
+.order-hero__title {
+  font-weight: 700;
+  line-height: 1.25;
+  font-size: 24px;
+  color: #487996;
+  text-transform: uppercase;
+}
+
+.order-hero__bg {
+  width: 280px;
+  height: 171px;
+  background-image: url(../images/order/mobile/order-img.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 280px 171px;
+  border-radius: 15px;
+  margin-top: 16px;
+}
+
+@media screen and (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .order-hero__bg {
+    background-image: url(../images/order/mobile/order-img@2x.jpg);
+  }
+}
+.order-hero__ad {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.25;
+  color: #2b2b2b;
+  margin-top: 16px;
 }/*# sourceMappingURL=main.css.map */

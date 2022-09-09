@@ -425,6 +425,8 @@ body {
     font-size: 48px;
     line-height: 1.1666666667;
     width: 630px;
+    margin-left: 426px;
+    margin-right: 384px;
   }
 }
 
@@ -522,7 +524,7 @@ body {
 }
 
 .main-gallery__item {
-  display: inline-block;
+  display: block;
   width: 100%;
 }
 @media screen and (max-width: 768px) {
@@ -537,6 +539,7 @@ body {
 }
 
 .main-gallery__img {
+  display: block;
   width: 100%;
 }
 
@@ -564,6 +567,12 @@ body {
   position: relative;
 }
 
+@media screen and (min-width: 1440px) {
+  .main-gallery > .container {
+    padding: 0 149px;
+  }
+}
+
 .main-hero__arrow {
   position: absolute;
   bottom: -20px;
@@ -576,6 +585,12 @@ body {
 @media screen and (max-width: 768px) {
   .main-hero__arrow {
     display: none;
+  }
+}
+@media screen and (max-width: 1440px) {
+  .main-hero__arrow {
+    width: 16px;
+    height: 16px;
   }
 }
 

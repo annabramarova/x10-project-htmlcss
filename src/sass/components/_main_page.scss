@@ -29,6 +29,8 @@
     font-size: 48px;
     line-height: calc(56 / 48);
     width: 630px;
+    margin-left: 426px;
+    margin-right: 384px;
   }
 }
 
@@ -110,7 +112,7 @@
 }
 
 .main-gallery__item {
-  display: inline-block;
+  display: block;
   width: 100%;
   @include mq(null, $width-tablet) {
     &:not(:last-child) {
@@ -123,6 +125,7 @@
 }
 
 .main-gallery__img {
+  display: block;
   width: 100%;
 }
 
@@ -146,6 +149,12 @@
   position: relative;
 }
 
+.main-gallery > .container {
+  @include mq($width-desktop) {
+    padding: 0 149px;
+  }
+}
+
 .main-hero__arrow {
   position: absolute;
   bottom: -20px;
@@ -157,5 +166,9 @@
   }
   @include mq(null, $width-tablet) {
     display: none;
+  }
+  @include mq(null, $width-desktop) {
+    width: 16px;
+    height: 16px;
   }
 }

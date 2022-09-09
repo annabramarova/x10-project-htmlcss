@@ -18,6 +18,20 @@
 .arrow-previous{
     position: absolute;
     top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    left: 21px;
+}
+.arrow-next{
+    position: absolute;
+    top: 50%;
+    right: 21px;
+}
+
+.arrow-previous__icon{
+    background-color: transparent;
+    outline: none;
+}
+
+.arrow-next__icon{
+    background-color: transparent;
+    outline: none;
 }

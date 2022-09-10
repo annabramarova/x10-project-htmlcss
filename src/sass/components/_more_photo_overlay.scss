@@ -1,4 +1,4 @@
-.backdrop {
+.gallary__backdrop {
     @include mq($width-tablet) {
         z-index: 100;
         position: fixed;
@@ -10,7 +10,7 @@
     }
 }
 
-.gallery-modal {
+.gallary__image {
     @include mq($width-tablet) {
         min-width: 554px;
         min-height: 369px;
@@ -27,7 +27,7 @@
     }
 }
 
-.arrow-previous {
+.gallary__btn-prev {
     position: absolute;
     background-color: transparent;
     border: none;
@@ -44,7 +44,7 @@
     }
 }
 
-.arrow-next {
+.gallary__btn-next {
     cursor: pointer;
     position: absolute;
     background-color: transparent;

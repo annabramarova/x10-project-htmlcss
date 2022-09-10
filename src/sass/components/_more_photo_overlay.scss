@@ -10,6 +10,23 @@
     }
 }
 
+
+.gallary__image.is-surfaced{
+  @include mq($width-tablet) {
+    min-width: 554px;
+    min-height: 369px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #FFFFFF;
+  }
+  @include mq($width-desktop) {
+    min-width: 906px;
+    min-height: 605px;
+  }
+}
+
 .gallary__image {
     @include mq($width-tablet) {
         min-width: 554px;

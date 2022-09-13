@@ -1,8 +1,7 @@
 .main-hero,
 .main-gallery {
-
   padding-bottom: 40px;
-  
+
   @include mq($width-tablet) {
     padding-bottom: 60px;
   }
@@ -150,6 +149,9 @@
   width: 280px;
   margin-left: auto;
   margin-right: auto;
+  @include mq($width-mobile) {
+    width: 430px;
+  }
   @include mq(null, $width-tablet) {
     &:not(:last-child) {
       margin-bottom: 24px;
@@ -207,10 +209,13 @@
 
 // RESPONSIVE FOR MOR GALLERY
 @media screen and (max-width: 479px) {
-  .main-gallery__img--width {
-    width: calc(100% - 10px);
-  }
   .main-gallery__item {
+    width: calc(100%);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .main-gallery__img--width {
     width: calc(100%);
   }
 }

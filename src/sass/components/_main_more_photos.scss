@@ -71,10 +71,15 @@
 // RESPONSIVE FOR MOR PHOTOS
 @media screen and (max-width: 479px) {
   .gallary__image {
-    width: calc(100% - 10px);
+    width: calc(100%);
   }
   .more-photos__item {
     place-content: normal;
+  }
+}
+@include mq($width-mobile) {
+  .gallary__image {
+    width: 440px;
   }
 }
 

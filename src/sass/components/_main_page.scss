@@ -150,7 +150,7 @@
   margin-left: auto;
   margin-right: auto;
   @include mq($width-mobile) {
-    width: 430px;
+    width: 440px;
   }
   @include mq(null, $width-tablet) {
     &:not(:last-child) {

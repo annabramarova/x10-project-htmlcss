@@ -29,21 +29,14 @@
         </div>
 
         <div class="form__field">
-          <input
-            type="text"
-            list="types-plastic"
-            class="form__input form__list"
-            name="plastics"
-            id="plastics"
-            placeholder="Види пластику"
-          />
-          <label for="plastics" class="form__label--selective"></label>
-          <datalist id="types-plastic">
-            <option>Поліетилен</option>
-            <option>Поліпропілен</option>
-            <option>Полістирол</option>
-            <option>Труднощі у виборі - ми допоможемо</option>
-          </datalist>
+          <select name="types_of_plastic" class="form__option">
+            <option disabled selected>Види пластика</option>
+            <option value="h">Поліетилен</option>
+            <option value="s">Поліпропілен</option>
+            <option value="m">Полістирол</option>
+            <option value="help">Труднощі у виборі - ми допоможемо</option>
+          </select>
+          <div class="form__arrow"></div>
         </div>
 
         <div class="form__field">
@@ -101,7 +94,8 @@
             />
             <label for="file">
               <svg class="comment__icon--main" width="22" height="22">
-                <use href="./images/icons.svg#icon-paper-clip"></use></svg            ></label>
+                <use href="./images/icons.svg#icon-paper-clip"></use></svg
+            ></label>
           </div>
         </div>
 

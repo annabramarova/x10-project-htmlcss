@@ -28,26 +28,35 @@
           <label for="email" class="form__label--main">Email</label>
         </div>
 
-        <div class="form__field">
-          <select name="types_of_plastic" class="form__option">
-            <option disabled selected>Види пластика</option>
-            <option value="h">Поліетилен</option>
-            <option value="s">Поліпропілен</option>
-            <option value="m">Полістирол</option>
-            <option value="help">Труднощі у виборі - ми допоможемо</option>
-          </select>
+        <div class="form__field--selective">
+          <input
+            type="text"
+            list="types-plastics"
+            class="form__input form__list"
+            name="plastics"
+            id="plastics"
+            placeholder="Види пластику"
+          />
           <div class="form__arrow"></div>
+          <label for="plastics" class="form__label--selective"></label>
+          <datalist id="types-plastics">
+            <option>300 мікрон</option>
+            <option>200 мікрон</option>
+            <option>100 мікрон</option>
+            <option>Труднощі у виборі - ми допоможемо</option>
+          </datalist>
         </div>
 
-        <div class="form__field">
+        <div class="form__field--selective">
           <input
             type="text"
             list="types-quality"
             class="form__input form__list"
-            name="quality"
-            id="quality"
+            name="print-quality"
+            id="print-quality"
             placeholder="Якість друку"
           />
+          <div class="form__arrow"></div>
           <label for="print-quality" class="form__label--selective"></label>
           <datalist id="types-quality">
             <option>300 мікрон</option>
@@ -57,7 +66,7 @@
           </datalist>
         </div>
 
-        <div class="form__field">
+        <div class="form__field--selective">
           <input
             type="text"
             list="types-colour"
@@ -66,6 +75,7 @@
             id="colour"
             placeholder="Колір"
           />
+          <div class="form__arrow"></div>
           <label for="colour" class="form__label--selective"></label>
           <datalist id="types-colour">
             <option>Червоний</option>

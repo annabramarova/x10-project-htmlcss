@@ -41,7 +41,8 @@
   }
 }
 
-.form__field {
+.form__field,
+.form__field--selective {
   position: relative;
   width: 100%;
 }
@@ -58,44 +59,7 @@
   }
 }
 
-.form__input:focus + .form__label--main,
-.form__input:not(:placeholder-shown) + .form__label--main {
-  transform: translateY(-20px);
-  font-size: 14px;
-}
-
-.form__arrow::before {
-  content: '';
-  display: block;
-
-  position: absolute;
-  top: 3px;
-  right: 0;
-  border: 10px solid #0000;
-  border-top: 10px solid map-get($colors, 'primary-text');
-  border-bottom-width: 0;
-
-  pointer-events: none;
-  transition: transform;
-}
-
-.form__option {
-  appearance: none;
-
-  &:focus + .form__arrow::before {
-    transform: rotate(180deg);
-  }
-  @include mq($width-desktop) {
-    font-size: 18px;
-  }
-}
-
-.form__list::-webkit-calendar-picker-indicator {
-  opacity: 1;
-}
-
-.form__input,
-.form__option {
+.form__input {
   display: block;
   margin-bottom: 44px;
   width: 100%;
@@ -111,6 +75,43 @@
   &::placeholder {
     color: map-get($colors, 'primary-text');
   }
+}
+
+.form__input:focus + .form__label--main,
+.form__input:not(:placeholder-shown) + .form__label--main {
+  transform: translateY(-20px);
+  font-size: 14px;
+}
+
+.form__list {
+  position: relative;
+
+  &:focus + .form__arrow::before {
+    transform: rotate(180deg);
+  }
+
+  &::-webkit-calendar-picker-indicator {
+    opacity: 0;
+  }
+
+  @include mq($width-desktop) {
+    font-size: 18px;
+  }
+}
+
+.form__arrow::before {
+  content: '';
+  display: block;
+
+  position: absolute;
+  top: 3px;
+  right: 0;
+  border: 10px solid #0000;
+  border-top: 10px solid map-get($colors, 'primary-text');
+  border-bottom-width: 0;
+
+  pointer-events: none;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .comment__label--main {

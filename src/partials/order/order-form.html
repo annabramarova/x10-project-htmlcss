@@ -28,7 +28,37 @@
           <label for="email" class="form__label--main">Email</label>
         </div>
 
-        <div class="form__field">
+        <div class="select">
+          <button class="select__button" type="button">Види пластика</button>
+          <ul class="select__list">
+            <li class="select__item" tabindex="0" data-value="top">
+              Найміцніший
+            </li>
+            <li class="select__item" tabindex="0" data-value="midle">
+              Можна брати
+            </li>
+            <li class="select__item" tabindex="0" data-value="low">
+              Ну...таке собі
+            </li>
+            <li class="select__item" tabindex="0" data-value="need-help">
+              Труднощі у виборі - ми допоможемо
+            </li>
+          </ul>
+          <input
+            type="text"
+            name="plastic-types"
+            value=""
+            class="select__input visually-hidden"
+            tabindex="-1"
+          />
+          <span class="select-icon">
+            <svg width="18.1" height="13">
+              <use href="/src/images/icons.svg#icon-form-arrow"></use>
+            </svg>
+          </span>
+        </div>
+
+        <!-- <div class="form__field">
           <input
             type="text"
             list="types-plastic"
@@ -44,7 +74,7 @@
             <option>Полістирол</option>
             <option>Труднощі у виборі - ми допоможемо</option>
           </datalist>
-        </div>
+        </div> -->
 
         <div class="form__field">
           <input
@@ -101,7 +131,9 @@
             />
             <label for="file">
               <svg class="comment__icon--main" width="22" height="22">
-                <use href="./images/icons.svg#icon-paper-clip"></use></svg            ></label>
+                <use href="./images/icons.svg#icon-paper-clip"></use>
+              </svg>
+            </label>
           </div>
         </div>
 
